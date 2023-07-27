@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --headline-color: #fffffe;
+    --paragraph-color: #94a1b2;
+    --button-color: #7f5af0;
+    --button-text: #fffffe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #16161a;
+}
+
+.App {
+    padding: 10px;
+    max-width: 700px;
+    margin-top: 10rem;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: -.15rem;
+    line-height: 1.15;
+    color: var(--headline-color);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--paragraph-color);
+}
+
+.hero-section .link ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-left: 0pt;
+}
+
+.hero-section .link ul li a i {
+    font-size: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: var(--paragraph-color);
+    cursor: pointer;
+}
+
+div.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+div.skills h3{
+    font-size: 2rem;
+    color: var(--headline-color);
+}
+
+div.skills div.links{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+div.skills div.links a{
+    cursor: pointer;
+}
+
+div.projects div.head h3 {
+    font-size: 2rem;
+    color: var(--headline-color);
+}
+
+div.project {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+div.project:hover {
+    opacity: 0.9;
+    box-shadow: none;
+}
+
+div.project div.head {
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.project div.head h4 {
+    font-size: 1.8rem;
+    color: var(--headline-color);
+    margin: 1rem 0;
+}
+
+div.project div.head div.skill-used ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-left: 0pt;
+    gap: 1rem;
+}
+
+div.project div.head div.skill-used ul li {
+    font-size: 1rem;
+    color: var(--button-text);
+}
+
+div.project div.head p {
+    font-size: 1.15rem;
+    color: var(--paragraph-color);
+}
+
+div.project div.links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+div.project div.links a {
+    color: var(--paragraph-color);
+}
+
+div.contact h3 {
+    font-size: 2rem;
+    color: var(--headline-color);
+}
+
+div.contact div.contact-each {
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--paragraph-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contact div.contact-each .dash {
+    border-top: 1px dashed var(--paragraph-color);
+    width: 55%;
+    margin: 1.5rem auto;
+}
+
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+div.header .logo {
+    color: var(--headline-color);
+}
+
+div.header .resume a {
+    font-size: 1.2rem;
+    color: var(--headline-color);
+    text-decoration: none;
+}
+
+div.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+div.footer .footer-links ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0pt;
+    margin: 0;
+}
+
+div.footer div.footer-links ul li a{
+    color: var(--paragraph-color);
+    text-decoration: none;
+}
